@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700|Roboto|Open+Sans|Work+Sans:300,200|Amatic+SC");
+
+	
+header{
+	color:#10ADC3;
+	box-sizing: border-box;
+	height: 94px;
+	box-shadow: 0 3px 0 0 #10ADC3;
+	z-index: 100;
+	background-color: white;
+}
+#menu-bars{
+	border:1px solid #10ADC3;
+	font-size: 20px;
+	color:#10ADC3;
+}
+
+nav{
+	background-color: #10ADC3;
+	font-size: 11px;
+	font-family: Ubuntu;
+}
+nav ul li a{
+	color:#EFEFEF;
+}
+nav ul li a:hover{
+	color:#555;
+}
+
+div.alert-back{
+	position: fixed;
+	z-index: 10;
+	display: none;
+	background-color: rgba(0,0,0,0.4);
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+
+div.alert{
+	z-index: 2;
+	width:30%;
+	left:35%;
+	top:35%;
+	color:#666;
+}
+div.error{
+	z-index: 2;
+	width:30%;
+	left:35%;
+	top:25%;
+	color:#FFF;
+}
+
+.vertical-align{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.il-vertical-align{
+	display: flex;
+	align-items: center;
+}
+
+.div-logo{
+	font-family: Amatic SC;
+	font-size: 26px;
+}
+.div-logo i{
+	vertical-align: middle;
+}
+
+.div-logo i.logo_big{
+	font-size: 55px;
+}
+
+.biglogo{
+	padding: 25px;
+	box-sizing: border-box;
+	z-index: 1;
+}
+.biglogo i{
+	font-size: 9em;
+	color:#555;
+	background-color: rgba(255,255,255,0.2);
+	padding: 3.5%;
+	box-shadow: 0 0 0 14px rgba(255,255,255,0.2);	
+	border:2px dashed white;
+	border-radius: 50%;
+}
+
+.add{
+	box-sizing: border-box;
+	position: relative;
+	padding: 25px;
+	z-index: 1;
+	border-radius: 20px;
+	background-color: rgba(255,255,255,0.4);
+}
+.add h1, .biglogo h1{
+	font-family: Ubuntu;
+	color:#666;
+}
+.add p{
+	font-family: Ubuntu;
+	font-size: 18px;
+	color:#555;
+}
+.adn{
+	position:relative;
+	box-sizing: border-box;
+	padding: 25px;
+	z-index: 1;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.2);
+}
+.adn p{
+	font-family: Ubuntu;
+	font-size: 16px;
+	color:#FFF;
+}
+
+
+.parallax, #top-cover{
+	position: relative;
+	background: fixed no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.parallax:after, #top-cover:after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	top:0;
+	left: 0;
+}
+.parallax img{
+	width: 90%;
+	margin-left: 5%;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 13px;
+	border:2px dashed rgba(255,255,255,0.5);
+	box-shadow: 0 0 0 8px rgba(255,255,255,0.15);
+	background-color: rgba(255,255,255,0.15);
+}
+
+#top-cover:after{
+	background-color: #10ADC3;
+}
+#top-cover{
+	margin-top: 95px;
+	height: 450px;
+	background-image: url('/Views/assets/images/cover1.jpg');
+}
+
+#main-info{
+	color:#555;
+	padding: 100px 0 100px 0;
+}
+#main-info i.fas, #main-info i.fa, #main-info i.far, #main-info i.fab{
+	font-size: 1.6em;
+	color: #10ADC3;
+}
+
+article iframe{
+	width: 100%;
+}
+article blockquote{
+	border-left: 3px solid #3498DB;
+	padding-left: 5px;
+	background-color: #FAFAFA;
+}
+article img:not(.img-fluid){
+	width: 65%;
+	margin-left: 17.5%;
+}
+
+.p-vertical{
+	padding: 2.8% 0;
+}
+.auto-vertical{
+	padding: 5.6% 0;
+}
+.card-sect{
+   margin-top: 50px;
+}
+.card-img-top{
+	filter:brightness(50%);
+}
+.card{
+	margin-top: 8px;
+	filter:drop-shadow(7px 10px 10px rgba(0,0,0,0.2));
+}
+.card:hover{
+	filter:drop-shadow(7px 10px 10px rgba(0,0,0,0.27));	
+}
+.sect-ln{
+	margin-top: 180px;
+}
+.sect-ln img{
+	padding: 5px;
+	box-shadow: 0 0 40px rgba(0,0,0,0.2);
+}
+.h-lenodula{
+	padding-top: 130px;
+	font-family: Open Sans;
+	font-size: 51px;
+}
+.h-lenodula i{
+	vertical-align: middle;
+}
+.sect-ln h2{
+	font-family: Ubuntu;
+	font-size: 45px;
+}
+
+#sect-1{
+	background-image: url('/Views/assets/images/login.svg');
+}
+#sect-2{
+	background-image: url('/Views/assets/images/team.svg');
+}
+
+#sect-3{
+	background-image: url('/Views/assets/images/course.svg');
+}
+#sect-4{
+	background-image: url('/Views/assets/images/share.svg');
+}
+
+#sect-5{
+	background-image: url('/Views/assets/images/forum.svg');
+}
+
+.parallax{
+	padding: 100px 0 100px 0;
+}
+
+.h-sect{
+	color:#FFF;
+	font-family: Ubuntu;
+	font-size: 2.5em;
+	width: 100%;
+	text-align: center;
+}
+
+.btn-lnd{
+	border-radius: 22px;
+	font-family: Open Sans;
+}
+
+.capital{
+	float: left;
+	line-height: 40px;
+	padding: 5px 6px 0 0;
+	font-size: 60px;
+}
+div#info_contacto{
+	margin:130px 0 20px 0;
+}
+div#frm_contacto form button[type=submit]{
+	border-radius: 20px;
+	padding: 10px 20px 10px 20px;
+}
+div#frm_contacto form input, div#frm_contacto form textarea{
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 2px 40px rgba(0,0,0,0.18);
+}
+
+footer{
+	color:white;
+	background-color: #FFF;
+}
+
+footer .foot-top{
+	height: 50px;
+}
+
+
+footer .foot-bottom{
+	height: calc(100% - 50px);
+	padding:50px 0 50px 0;
+	background-color: #10ADC3;
+}
+.foot-bottom a{
+	color:white;
+}
+
+
+.logo-footer{
+	font-family: Amatic SC;
+	font-size: 34px;
+}
+.logo-footer p i{
+	vertical-align: middle;
+}
+.info-foot{
+	background-color: #009CB2;
+}
+.info-foot i{
+	vertical-align: middle;
+}
+
+.col-center{
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
