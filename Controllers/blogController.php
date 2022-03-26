@@ -58,6 +58,23 @@
 
 			return $res->fetch_array();
 		}
+		
+		public function ultimo_articulo(){
+		    $res = $this->articulo->getLast();
+		    
+		    $arr = array();
+		    
+		    while($row = $res->fetch_array()){
+		        $fot = $row['foto_articulo'];
+		        $tit = $row['titulo_articulo'];
+		        $des = $row['descripcion_articulo'];
+		        
+				$arr[] = array('fot' => $fot, 'tit' => $tit, 'des' => $des);
+			}
+			
+			header('Access-Control-Allow-Origin: *');
+			echo json_encode($arr);
+		}
 
 		public function nuevo(){
 			session_start();

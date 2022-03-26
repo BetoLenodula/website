@@ -15,7 +15,7 @@
 						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						    <a class="dropdown-item" href="https://www.facebook.com/sharer.php?u=<?= URL;  ?>blog/articulo/<?= $argumento;  ?>">Facebook</a>
 						    <a class="dropdown-item" href="https://twitter.com/intent/tweet?text=<?= $dat['descripcion_articulo']; ?>&url=<?= URL; ?>blog/articulo/<?= $argumento; ?>&hashtags=BlogLenodula">Twitter</a>
-						    <a class="dropdown-item" href="https://api.whatsapp.com/send?text=<?= $dat['descripcion_articulo'] . URL; ?>blog/articulo/<?= $argumento;  ?>">Whatsapp</a>
+						    <a class="dropdown-item" href="https://api.whatsapp.com/send?text=<?= $dat['descripcion_articulo'] ." ".URL; ?>blog/articulo/<?= $argumento;  ?>">Whatsapp</a>
 						  </div>
 					</div>
 					<section>

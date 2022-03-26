@@ -62,6 +62,12 @@
 			$res = $this->con->returnQuery(trim($sql));
 			return $res;
 		}
+		
+		public function getLast(){
+		    $sql = "SELECT titulo_articulo, foto_articulo, descripcion_articulo FROM articulos ORDER BY id DESC LIMIT 1;";
+			$res = $this->con->returnQuery($sql);
+			return $res;
+		}
 
 	}
 
